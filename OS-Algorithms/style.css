@@ -1,0 +1,111 @@
+/* Body Styling */
+body {
+  background-color: bisque;
+  margin: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #333; /* Dark Gray */
+}
+
+/* Section Titles Styling */
+#allTables p, #title {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+}
+
+/* General Paragraph Styling */
+p, #allTables h2, #makeResourceRequest h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: indigo;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Table Row Alternating Colors */
+tr:nth-child(odd) {
+  background-color: #f0f8ff; /* Alice Blue */
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5dc; /* Beige */
+}
+
+/* Input Field Styling */
+input[type='text'] {
+  height: 30px;
+  width: 70px;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 5px;
+  border: 3px solid darkred;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Container for Inputs */
+#inputs {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+}
+
+/* Container for Buttons */
+#buttons {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* Button Styling */
+input[type='button'] {
+  font-variant: small-caps;
+  height: 50px;
+  padding: 10px 50px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  border: none;
+}
+
+/* Resource Request Section Styling */
+#resourceRequestPart, #makeResourceRequest {
+  display: none;
+}
+
+/* Horizontal Rule Styling */
+hr {
+  border: 2px solid green;
+  margin: 20px 0;
+}
+
+.tableform{
+  display: flex;
+}

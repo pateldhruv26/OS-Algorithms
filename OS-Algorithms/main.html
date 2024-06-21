@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #88fca3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-blue-900 bg-opacity-80 p-8 rounded-lg">
+        <h1 class="text-4xl font-bold mb-6 text-white">Banker's Algorithm</h1>
+        <p class="text-lg mb-4">The Banker's Algorithm is a resource allocation and deadlock avoidance algorithm that is used in operating systems. It was developed by Edsger W. Dijkstra and named in honor of the banker's dilemma of lending and borrowing. The algorithm is designed to avoid deadlock by determining whether granting a resource request will leave the system in a safe state.</p>
+        <p class="text-lg mb-4">Learn more about Banker's Algorithm <a href="index.html" class="underline">here</a>.</p>
+        <h2 class="text-4xl font-bold mb-4 text-white">Page Replacement Algorithms</h2>
+        <p class="text-lg mb-4">Page replacement algorithms are used in operating systems to manage memory efficiently by replacing pages in memory. Two common page replacement algorithms are:</p>
+        <p class="text-lg mb-4">FIFO (First-In-First-Out) Page Replacement Algorithm: <a href="./PageReplacement/fifo.html" class="underline">Learn more</a>.</p>
+        <p class="text-lg mb-4">LRU (Least Recently Used) Page Replacement Algorithm: <a href="./PageReplacement/lru.html" class="underline">Learn more</a>.</p>
+    </div>
+</body>
+</html>

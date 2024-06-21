@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal cache</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Page-replacement algorithm</h1>
+    <h2>Optimal Page replacement</h2>
+
+    <main>
+        <div class="capacity">
+            <p>Enter the capacity of the cache</p>
+            <input type="number" id="capacity" placeholder="capacity">
+            <button id="cap-btn" onclick="setCapacity()">set capacity</button>
+        </div>
+        <div class="output">
+            <h3>Result:</h3>
+            <p id="display">None</p>
+        </div>
+        <section class="Optimal-table">
+            <div>
+                <input type="number" id="total-process" placeholder="Enter total requests">
+                <button id="makeTable" onclick="Optimal()">Button</button>
+            </div>
+        </section>
+        <div id="mainDiv">
+            <div id="process-input"></div>
+            <button id="craft" onclick="craft()">craft</button>
+            <div id="main-table">
+                
+            </div>
+        </div>
+        <div>
+            <div id="table-container"></div>
+            <div id="table-status" ></div>
+        </div>
+    </main>
+
+    <script src="Optimal.js"></script>
+</body>
+
+</html>

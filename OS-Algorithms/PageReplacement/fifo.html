@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFO cache</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: bisque;;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .capacity, .fifo-table {
+            margin-bottom: 20px;
+        }
+
+        .capacity input[type="number"], .fifo-table input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .capacity button, .fifo-table button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .output {
+            text-align: center;
+        }
+
+        #table-container {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Page-replacement algorithm</h1>
+    <h2>FIFO - First in First Out</h2>
+    <main>
+        <div class="capacity">
+            <p>Enter the capacity of the cache</p>
+            <input type="number" id="capacity" placeholder="Capacity">
+            <button id="cap-btn" onclick="setCapacity()">Set Capacity</button>
+        </div>
+        <div class="output">
+            <h3>Result:</h3>
+            <p id="display">None</p>
+        </div>
+
+        <section class="fifo-table">
+            <div>
+                <input type="number" id="page-number" placeholder="Enter page number">
+                <button id="makeTable" onclick="fifo()">Generate Table</button>
+            </div>
+
+            <div id="table-container"></div>
+            <div id="table-status"></div>
+        </section>
+
+    </main>
+
+    <script src="fifo.js"></script>
+</body>
+
+</html>
